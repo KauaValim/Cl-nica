@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    width: 1920px;
+    height: 141px;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, #00EA6B 0%, #006A31 100%);
+}
+
+header img {
+    position: fixed;
+    margin: 12.5px 467px;
+}
+
+header h1 {
+    position: fixed;
+    margin: 40px 1075px;
+    width: 388px;
+    height: 61px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.header-menu{
+    width: 1920px;
+    height: 43px;
+    flex-shrink: 0;
+    background: #33CAFA;
+}
