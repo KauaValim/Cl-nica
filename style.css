@@ -1,22 +1,43 @@
 * {
     padding: 0;
     margin: 0;
+
+
 }
+
+
+h3 a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
 header {
-    width: 1920px;
+    width: 100vw;
     height: 141px;
     flex-shrink: 0;
-    background: linear-gradient(90deg, #00EA6B 0%, #006A31 100%);
+    background: linear-gradient(90deg, #02cf5e 0%, #006A31 100%);
 }
+
 
 header img {
-    position: fixed;
-    margin: 12.5px 467px;
+    position: absolute;
+    left: 24.32vw;
+    padding: 12.5px 0px;
+    height: 110px;
+    width: 115px;
 }
 
+
 header h1 {
-    position: fixed;
-    margin: 40px 1075px;
+    position: absolute;
+    left: 60.98vw;
+    padding: 40px 0px;
     width: 388px;
     height: 61px;
     color: #FFF;
@@ -27,9 +48,212 @@ header h1 {
     line-height: normal;
 }
 
-.header-menu{
-    width: 1920px;
+
+.header-menu {
+    width: 100vw;
     height: 43px;
     flex-shrink: 0;
     background: #33CAFA;
+}
+
+
+.linkhome {
+    left: 29.58vw;
+    padding: 9px;
+    margin: 0px;
+    position: absolute;
+    width: 176px;
+    height: 34px;
+}
+
+
+.linkservices {
+    left: 43.80vw;
+    padding: 9px;
+    margin: 0px;
+    position: absolute;
+    width: 117px;
+    height: 34px;
+}
+
+
+.linkcrew {
+    left: 54.94vw;
+    padding: 9px;
+    margin: 0px;
+    position: absolute;
+    width: 92px;
+    height: 34px;
+}
+
+
+.linkcontact {
+    left: 64.79vw;
+    padding: 9px;
+    margin: 0px;
+    position: absolute;
+    width: 108px;
+    height: 34px;
+}
+
+
+/* -----Começo da personalização do home----- */
+
+
+.intro {
+    margin: 50px 0px 0px 0px;
+    display: grid;
+    grid-row: 200px;
+    grid-column: 200px;
+    grid-template-columns: 300px 400px;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+
+.intro img {
+    width: 300px;
+    height: 200px;
+}
+
+
+/* -----Começo da personalização do services----- */
+
+
+.services {
+    left: 24.5vw;
+    top: 30px;
+    position: relative;
+    font-size: xx-large;
+}
+
+
+.flexbox {
+    position: relative;
+    top: 70px;
+    display: grid;
+    grid-template-columns: 486px 486px;
+    grid-auto-rows: 375px;
+    justify-content: center;
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+
+.square {
+    width: 486px;
+    height: 375px;
+    flex-shrink: 0;
+    border-radius: 33px;
+    background: rgba(0, 234, 107, 0.30);
+}
+
+
+[class*="img"] {
+    width: 384px;
+    position: relative;
+    left: 50px;
+    top: 44px;
+}
+
+
+.stylefont {
+    position: relative;
+    text-align: center;
+    top: 17%;
+    font-size: x-large;
+}
+
+
+/* -----Começo da personalização do crew----- */
+
+
+.medicos {
+    left: 24.5vw;
+    top: 30px;
+    position: relative;
+    font-size: xx-large;
+}
+
+
+.medicosgerais {
+    position: relative;
+    width: 100vw;
+    top: 80px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 135.14px 400px 135.14px;
+    grid-template-rows: 180px 180px 180px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+
+.txt1, .txt3 {
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    margin-left: 20px;
+    row-gap: 5px;
+}
+
+
+.txt2 {
+    overflow: hidden;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    margin-right: 20px;
+    row-gap: 5px;
+}
+
+
+[class*="imed"]{
+    height: 170px;
+    border-radius: 15px;
+}
+
+
+/* -----Começo da personalização do contact----- */
+
+
+.contact {
+    left: 30vw;
+    top: 15px;
+    position: relative;
+    font-size: x-large;
+}
+
+
+.location-map {
+    /* left: 15vw; */
+    top: 35px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.filial {
+    left: 30vw;
+    top: 80px;
+    position: relative;
+}
+
+
+footer {
+    background-color: #7e7e7e;
+    color: #fff;
+    padding: 20px 0px;
+    position: relative;
+    bottom: 0px;
+    flex-shrink: 0;
+    width: 100vw;
+    text-align: center;
+    margin-top: 100px;
 }
