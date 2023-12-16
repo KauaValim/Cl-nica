@@ -10,39 +10,46 @@
 
 <body>
     <header>
-        <img src="/src/images/logotipo.png" alt="Logo Exemplo">
-        <h1>Clínica Exemplo</h1>
+        <div class="header">
+            <img src="/src/images/logotipo.png" alt="Logo Exemplo">
+            <h1>Clínica Exemplo</h1>
+        </div>
+        <div class="header-menu">
+            <h3 class="linkhome"><a href="/index.html">Página inicial</a></h3>
+            <h3 class="linkservices"><a href="/services.html">Serviços</a></h3>
+            <h3 class="linkcrew"><a href="/crew.html">Equipe</a></h3>
+            <h3 class="linkcontact"><a href="/contact.html">Contato</a></h3>
+        </div>
     </header>
-    <div class="header-menu">
-        <h3 class="linkhome"><a href="/index.html">Página inicial</a></h3>
-        <h3 class="linkservices"><a href="/services.html">Serviços</a></h3>
-        <h3 class="linkcrew"><a href="/crew.html">Equipe</a></h3>
-        <h3 class="linkcontact"><a href="/contact.html">Contato</a></h3>
-    </div>
-    <div>
-        <h3 class="services">Nossos serviços:</h3>
-    </div>
-    <div class="flexbox">
-        <div class="square">
-            <img src="/src/images/consultas.jpg" alt="Imagem de uma consulta" class="imgConsulta">
-            <h4 class="stylefont">Consultas</h4>
+
+    <main>
+        <div class="gridservices">
+            <div class="titlegridservices">
+                <h3 class="services">Nossos serviços:</h3>
+            </div>
+            <div class="square">
+                <img src="/src/images/consultas.jpg" alt="Imagem de uma consulta" class="imgConsulta">
+                <h4 class="stylefont">Consultas</h4>
+            </div>
+            <div class="square">
+                <img src="/src/images/exames.jpg" alt="Imagem de um exame" class="imgExame">
+                <h4 class="stylefont">Exames</h4>
+            </div>
+            <div class="square">
+                <img src="/src/images/ambulatório.jpg" alt="Imagem de um ambulatório" class="imgAmbulatório">
+                <h4 class="stylefont">Ambulatório</h4>
+            </div>
+            <div class="square">
+                <img src="/src/images/cirurgias.jpg" alt="Imagem de uma cirurgia" class="imgCirurgia">
+                <h4 class="stylefont">Cirurgias</h4>
+            </div>
         </div>
-        <div class="square">
-            <img src="/src/images/exames.jpg" alt="Imagem de um exame" class="imgExame">
-            <h4 class="stylefont">Exames</h4>
-        </div>
-        <div class="square">
-            <img src="/src/images/ambulatório.jpg" alt="Imagem de um ambulatório" class="imgAmbulatório">
-            <h4 class="stylefont">Ambulatório</h4>
-        </div>
-        <div class="square">
-            <img src="/src/images/cirurgias.jpg" alt="Imagem de uma cirurgia" class="imgCirurgia">
-            <h4 class="stylefont">Cirurgias</h4>
-        </div>
-    </div>
+    </main>
 
     <footer>
-        <p>1973 - Todos os direitos reservados para Clínica Exemplo.</p>
+        <div>
+            <p class="footertext">1973 - Todos os direitos reservados para Clínica Exemplo.</p>
+        </div>
     </footer>
 
 </body>

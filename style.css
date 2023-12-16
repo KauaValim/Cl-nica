@@ -1,193 +1,192 @@
+/* -----Personalização geral----- */
+
 * {
     padding: 0;
     margin: 0;
-
-
 }
 
+body {
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+}
 
 h3 a {
     text-decoration: none;
     color: #FFF;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 2vh;
+    min-height: 59.27px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
 }
 
-
-header {
-    width: 100vw;
-    height: 141px;
-    flex-shrink: 0;
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    padding: 0px 7vw;
     background: linear-gradient(90deg, #02cf5e 0%, #006A31 100%);
 }
 
-
-header img {
-    position: absolute;
-    left: 24.32vw;
+.header img {
     padding: 12.5px 0px;
-    height: 110px;
-    width: 115px;
+    height: 11vh;
 }
 
-
-header h1 {
-    position: absolute;
-    left: 60.98vw;
+.header h1{
     padding: 40px 0px;
-    width: 388px;
-    height: 61px;
+    width: auto;
     color: #FFF;
     font-family: Inter;
-    font-size: 50px;
+    font-size: 5vh;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
 }
 
-
 .header-menu {
-    width: 100vw;
-    height: 43px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 25vw;
+    margin: 0px ;
+    height: 4vh;
     flex-shrink: 0;
     background: #33CAFA;
 }
 
-
-.linkhome {
-    left: 29.58vw;
-    padding: 9px;
-    margin: 0px;
-    position: absolute;
-    width: 176px;
-    height: 34px;
+main {
+    flex: 1 0 auto;
 }
 
-
-.linkservices {
-    left: 43.80vw;
-    padding: 9px;
-    margin: 0px;
-    position: absolute;
-    width: 117px;
-    height: 34px;
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7e7e7e;
+    color: #fff;
+    height: 5vh;
+    flex-shrink: 0;
 }
 
-
-.linkcrew {
-    left: 54.94vw;
-    padding: 9px;
-    margin: 0px;
-    position: absolute;
-    width: 92px;
-    height: 34px;
-}
-
-
-.linkcontact {
-    left: 64.79vw;
-    padding: 9px;
-    margin: 0px;
-    position: absolute;
-    width: 108px;
-    height: 34px;
+.footertext {
+    font-size: 1.7vh
 }
 
 
 /* -----Começo da personalização do home----- */
 
-
 .intro {
-    margin: 50px 0px 0px 0px;
     display: grid;
-    grid-row: 200px;
-    grid-column: 200px;
-    grid-template-columns: 300px 400px;
-    column-gap: 30px;
     justify-content: center;
+    grid-template-columns: 300px 400px;
+    grid-template-rows: 50px 200px;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
+.gridtitle {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.introtitlename {
+    font-size: 30px;
+    margin-left: 20px;
+    padding: 20px 0px 0px 0px;
+}
 
 .intro img {
     width: 300px;
     height: 200px;
+    border-radius: 30px;
+}
+
+.introtxt1{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    text-indent: 1em;
 }
 
 
 /* -----Começo da personalização do services----- */
 
-
 .services {
-    left: 24.5vw;
-    top: 30px;
-    position: relative;
-    font-size: xx-large;
+    font-size: 30px;
+    margin-left: 20px;
+    padding: 20px 0px 0px 0px;
 }
 
-
-.flexbox {
-    position: relative;
-    top: 70px;
+.gridservices {
     display: grid;
-    grid-template-columns: 486px 486px;
-    grid-auto-rows: 375px;
+    grid-template-rows: 50px 300px 300px;
+    grid-template-columns: 340px 340px;
     justify-content: center;
-    row-gap: 40px;
-    column-gap: 40px;
+    align-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 0px 0px 100px 0px;
 }
 
+.titlegridservices {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
 
 .square {
-    width: 486px;
-    height: 375px;
-    flex-shrink: 0;
+    width: 340px;
+    height: 300px;
     border-radius: 33px;
     background: rgba(0, 234, 107, 0.30);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
 }
-
 
 [class*="img"] {
-    width: 384px;
-    position: relative;
-    left: 50px;
-    top: 44px;
+    width: 300px;
+    border-radius: 20px;
 }
 
-
 .stylefont {
-    position: relative;
     text-align: center;
-    top: 17%;
-    font-size: x-large;
+    font-size: 3vh;
 }
 
 
 /* -----Começo da personalização do crew----- */
 
-
-.medicos {
-    left: 24.5vw;
-    top: 30px;
-    position: relative;
-    font-size: xx-large;
+.titlegrid {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
+.titlename {
+    font-size: 30px;
+    margin-left: 20px;
+    padding: 20px 0px 0px 0px;
+}
 
-.medicosgerais {
-    position: relative;
-    width: 100vw;
-    top: 80px;
+.gridequipe {
+    padding: 0vh 0px 5vh 0px;
     justify-content: center;
     display: grid;
-    grid-template-columns: 135.14px 400px 135.14px;
-    grid-template-rows: 180px 180px 180px;
-    column-gap: 10px;
-    row-gap: 10px;
+    grid-template-columns: 127.59px 400px 127.59px;
+    grid-template-rows: 50px 170px 170px 170px;
+    column-gap: 20px;
+    row-gap: 20px;
 }
-
 
 .txt1, .txt3 {
     overflow: hidden;
@@ -200,7 +199,6 @@ header h1 {
     row-gap: 5px;
 }
 
-
 .txt2 {
     overflow: hidden;
     text-align: right;
@@ -212,7 +210,6 @@ header h1 {
     row-gap: 5px;
 }
 
-
 [class*="imed"]{
     height: 170px;
     border-radius: 15px;
@@ -221,39 +218,71 @@ header h1 {
 
 /* -----Começo da personalização do contact----- */
 
-
-.contact {
-    left: 30vw;
-    top: 15px;
-    position: relative;
-    font-size: x-large;
+.gridcontact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 500px 500px;
+    row-gap: 20px;
 }
 
+
+.contacttitlename {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-size: 30px;
+    margin-left: 20px;
+    padding: 20px 0px 0px 0px;
+}
 
 .location-map {
-    /* left: 15vw; */
-    top: 35px;
-    position: relative;
-    display: flex;
-    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
 }
-
 
 .filial {
-    left: 30vw;
-    top: 80px;
-    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
+.filialtitle {
+    padding: 10px 0px 20px 0px;
+}
 
-footer {
-    background-color: #7e7e7e;
-    color: #fff;
-    padding: 20px 0px;
-    position: relative;
-    bottom: 0px;
-    flex-shrink: 0;
-    width: 100vw;
-    text-align: center;
-    margin-top: 100px;
+.filial h3 {
+    padding: 10px 0px 20px 0px;
+}
+
+.filial p {
+    overflow: visible;
+    height: fit-content;
+    padding-top: 1%;
+}
+
+[class*="cidade"]{
+    margin: 0px 0px 0px 10px;
+}
+
+[class*="endereco"]{
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 10px 20px 20px;
+}
+
+input {
+    background-color:#006A31;
+    border-style: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFF;
 }
