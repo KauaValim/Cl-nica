@@ -5,38 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 
 <body>
     <header>
         <div class="header">
-            <img src="/src/images/logotipo.png" alt="Logo Exemplo">
+            <img src="images/logotipo.png" alt="Logo Exemplo">
             <h1>Clínica Exemplo</h1>
         </div>
         <div class="header-menu">
-            <h3 class="linkhome"><a href="/index.html">Página inicial</a></h3>
-            <h3 class="linkservices"><a href="/services.html">Serviços</a></h3>
-            <h3 class="linkcrew"><a href="/crew.html">Equipe</a></h3>
-            <h3 class="linkcontact"><a href="/contact.html">Contato</a></h3>
+            <h3 class="linkhome"><a href="index.html">Página inicial</a></h3>
+            <h3 class="linkservices"><a href="services.html">Serviços</a></h3>
+            <h3 class="linkcrew"><a href="crew.html">Equipe</a></h3>
+            <h3 class="linkcontact"><a href="contact.html">Contato</a></h3>
         </div>
     </header>
     <main class="mainhome">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="https://redevik.com.br/wp-content/uploads/2019/10/clinica-medica-rede-vik-tire-suas-duvidas-sobre-o-atendimento.jpg"
+                    style="width:100%">
+            </div>
+    
+            <div class="mySlides fade">
+                <img src="https://docctormed.com.br/wp-content/uploads/2017/03/%C3%ADndice5.jpg" style="width:100%">
+            </div>
+    
+            <div class="mySlides fade">
+                <img src="https://www.pereiramontenegro.com.br/uploads/foto-esteto.jpg" style="width:100%">
+            </div>
+    
+        </div>
         <div class="intro">
             <div class="gridtitle">
-                <h3 class="introtitlename">Conheça um pouco sobre nós</h3>
+                <h3 class="introtitlename">Conheça um pouco sobre nós:</h3>
             </div>
-                <img src="https://saude.rs.gov.br/upload/recortes/202206/09191258_226032_GDO.jpeg" alt="Imagem do hospital"
-                width="625px" height="482px">
+            <img src="images/hospital.jpeg" alt="Imagem do hospital" width="625px" height="482px">
             <div class="introtxt1">
                 <p>
-                Exemplo é uma clínica que oferece serviços de saúde de qualidade em diversas especialidades, como
-                oftalmologia, cardiologia, dermatologia e muito mais. Na Exemplo, você encontra profissionais
-                qualificados,
-                equipamentos modernos e um atendimento personalizado. A clínica tem como missão cuidar da sua saúde e
-                bem-estar, com soluções integradas e eficientes. Agende sua consulta online e conheça a Exemplo, a
-                clínica
-                que cuida de você.
+                    Exemplo é uma clínica que oferece serviços de saúde de qualidade em diversas especialidades, como
+                    oftalmologia, cardiologia, dermatologia e muito mais. Na Exemplo, você encontra profissionais
+                    qualificados,
+                    equipamentos modernos e um atendimento personalizado. A clínica tem como missão cuidar da sua saúde
+                    e
+                    bem-estar, com soluções integradas e eficientes. Agende sua consulta online e conheça a Exemplo, a
+                    clínica
+                    que cuida de você.
                 </p>
             </div>
         </div>
@@ -47,6 +63,24 @@
             <p class="footertext">1973 - Todos os direitos reservados para Clínica Exemplo.</p>
         </div>
     </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000);
+        }
+    </script>
 
 </body>
 

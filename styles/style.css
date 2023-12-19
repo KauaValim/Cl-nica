@@ -51,7 +51,7 @@ h3 a {
     font-weight: 500;
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 600px) {
 
     /* config mobile header */
 
@@ -106,7 +106,29 @@ h3 a {
         flex-direction: column;
         height: 100vh;
     }
-    
+
+    main .slideshow-container {
+        max-width: 100%;
+        height: 20vh;
+        position: relative;
+        overflow-y: hidden;
+    }
+
+    main .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .1
+        }
+
+        to {
+            opacity: 15
+        }
+    }
+
     main {
         display: grid;
     }
@@ -114,44 +136,47 @@ h3 a {
     main .intro {
         display: grid;
         justify-content: center;
-        grid-template-columns: 45vh 0vh 0vh;
-        grid-template-rows: 5vh 0.5fr 30vh;
+        grid-template-columns: 75vw 0vw 0vw;
+        grid-template-rows: 5vh max-content max-content;
         column-gap: 0vh;
         row-gap: 2vh;
     }
-    
+
     main .gridtitle {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 2;
     }
-    
+
     main .introtitlename {
         font-size: 2.5vh;
         margin-left: 2vw;
         padding: 2vw 0px 0px 0px;
     }
-    
+
     main .intro img {
         grid-column-start: 1;
         grid-row-start: 2;
-        grid-row-end: 3;
-        width: 80vw;
+        grid-row-end: 2;
+        object-fit: cover;
+        width: 100%;
+        padding: 0;
         border-radius: 20px;
     }
-    
+
     main .introtxt1 {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 3;
         grid-row-end: 4;
+        font-size: 1.8vh;
         display: flex;
         flex-wrap: wrap;
         align-content: center;
         text-align: center;
         text-indent: 1em;
-        padding: 30px;    
+        padding: 30px;
     }
 
     /* config mobile footer */
@@ -165,9 +190,9 @@ h3 a {
         height: 5vh;
         flex-shrink: 0;
     }
-    
+
     footer div .footertext {
-        font-size: 1.7vh
+        font-size: 1.3vh
     }
 
     /* config mobile services */
@@ -177,7 +202,7 @@ h3 a {
         margin-left: 20px;
         padding: 20px 0px 0px 0px;
     }
-    
+
     main .gridservices {
         display: grid;
         grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr;
@@ -188,33 +213,36 @@ h3 a {
         column-gap: 0px;
         padding: 0px 0px 100px 0px;
     }
-    
+
     main .titlegridservices {
         grid-row-start: 1;
         grid-row-end: 1;
         grid-column-start: 1;
         grid-column-end: 1;
     }
-    
-    main .square1{
+
+    main .square1 {
         grid-row-start: 2;
         grid-row-end: 2;
         grid-column-start: 1;
         grid-column-end: 1;
     }
-    main .square2{
+
+    main .square2 {
         grid-row-start: 3;
         grid-row-end: 3;
         grid-column-start: 1;
         grid-column-end: 1;
     }
-    main .square3{
+
+    main .square3 {
         grid-row-start: 4;
         grid-row-end: 4;
         grid-column-start: 1;
         grid-column-end: 1;
     }
-    main .square4{
+
+    main .square4 {
         grid-row-start: 5;
         grid-row-end: 5;
         grid-column-start: 1;
@@ -225,22 +253,23 @@ h3 a {
         width: 80vw;
         height: 80vw;
         border-radius: 33px;
-        background: #00ea6b;
+        background: linear-gradient(180deg, #02cf5e 60%, #33CAFA 100%);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-content: center;
         flex-wrap: wrap;
     }
-    
+
     main [class*="img"] {
         width: 69vw;
         border-radius: 33px;
     }
-    
+
     main .stylefont {
+        color: #FFF;
         text-align: center;
-        font-size: 3vh;
+        font-size: 3.5vh;
     }
 
     /* config mobile crew */
@@ -261,14 +290,14 @@ h3 a {
         grid-row-start: 1;
         grid-row-end: 2;
     }
-    
+
     main .titlename {
         font-size: 30px;
         margin-left: 20px;
         width: 90vw;
         padding: 20px 0px 0px 0px;
     }
-    
+
     main .txt1,
     main .txt3,
     main .txt2 {
@@ -282,7 +311,7 @@ h3 a {
         row-gap: 1.5vw;
         font-size: 4vw;
     }
-    
+
     body .mainequi div {
         display: grid;
     }
@@ -333,39 +362,39 @@ h3 a {
         grid-row-start: 3;
         grid-row-end: 3;
     }
-    
+
     main .txt3 {
         grid-column-start: 2;
         grid-column-end: 2;
         grid-row-start: 4;
         grid-row-end: 4;
     }
-    
+
     /* config mobile contact */
     body main div {
         display: grid;
     }
-    
+
     main .gridcontact {
         display: grid;
         grid-template-columns: 0fr 1fr 0fr;
         grid-template-rows: 7vh 1fr 70vh;
         row-gap: 5vh;
     }
-    
+
     main .contacttitlename {
-        grid-column:1/3;
+        grid-column: 1/3;
         display: flex;
         font-size: 2vh;
         margin-left: 3vw;
         padding: 2.5vh 0vw 0vh 0vw;
     }
-    
+
     main .location-map {
         width: 100%;
         grid-column: 1/3;
     }
-    
+
     main .filial {
         grid-column-start: 2;
         grid-column-end: 2;
@@ -375,24 +404,24 @@ h3 a {
         flex-direction: column;
         flex-wrap: wrap;
     }
-    
+
     main .filialtitle {
         padding: 0vh 0px 5px 0px;
         margin-left: 5vw;
     }
-    
+
     main .filial h3 {
         padding: 4vh 0vw 2vh 0vw;
         text-align: center;
     }
-    
+
     main .filial p {
         overflow: visible;
         height: fit-content;
         padding-bottom: 1vh;
         text-align: center;
     }
-    
+
     main [class*="cidade"] {
         display: grid;
         grid-template-columns: 80vw;
@@ -400,7 +429,7 @@ h3 a {
         padding: 0px 20px 0px 20px;
         margin: 0px 0px 0px 0px;
     }
-    
+
     main .filial input {
         background-color: #006A31;
         border-style: none;
@@ -444,13 +473,37 @@ main {
 
 /* -----Começo da personalização do home----- */
 
+.slideshow-container {
+    max-width: 100%;
+    height: 50vh;
+    position: relative;
+    margin: auto;
+    overflow-y: hidden;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .1
+    }
+
+    to {
+        opacity: 15
+    }
+}
+
 .intro {
     display: grid;
     justify-content: center;
     grid-template-columns: 300px 400px;
-    grid-template-rows: 50px 200px;
+    grid-template-rows: max-content 200px;
     column-gap: 20px;
     row-gap: 20px;
+    padding-bottom: 10vh;
 }
 
 .gridtitle {
@@ -470,7 +523,6 @@ main {
     width: 300px;
     height: 200px;
     border-radius: 30px;
-    padding: 5px;
 }
 
 .introtxt1 {
@@ -511,7 +563,7 @@ main {
     width: 340px;
     height: 300px;
     border-radius: 33px;
-    background: #00ea6b;
+    background: linear-gradient(180deg, #02cf5e 60%, #33CAFA 100%);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -525,6 +577,7 @@ main {
 }
 
 .stylefont {
+    color: #FFF;
     text-align: center;
     font-size: 3vh;
 }
@@ -583,7 +636,7 @@ main {
     border-radius: 15px;
 }
 
-@media only screen and (min-width: 431px){
+@media only screen and (min-width: 601px) {
     main .imed2mob {
         display: none;
     }
@@ -637,7 +690,7 @@ main {
 
 .filial h3 {
     padding: 0px 0px 0px 0px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
@@ -650,7 +703,7 @@ main {
 .filial p {
     overflow: visible;
 
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
@@ -661,7 +714,7 @@ main {
     grid-row-end: 2;
 }
 
-.filial input{
+.filial input {
     grid-row: 1/3;
     width: 140px;
     height: 50px;
